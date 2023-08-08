@@ -12,12 +12,12 @@ Create a Laravel APIs application for a travel agency.
     5.	A public (no auth) endpoint to get a list of paginated travels. It must return only public travels;
     6.	A public (no auth) endpoint to get a list of paginated tours by the travel slug (e.g. all the tours of the travel foo-bar). Users can filter (search) the             results by priceFrom, priceTo, dateFrom (from that startingDate) and dateTo (until that startingDate). User can sort the list by price asc and desc. They             will always be sorted, after every additional user-provided filter, by startingDate asc.
 # How to setup
-composer install
-# copy .env.example to .env
-cp .env.example .env
-# generate security key , link storage file
-php artisan key:generate 
-# after connect your database via .env file
-php artisan migrate:fresh
-php artisan db:seed
+    composer install
+    copy .env.example to .env
+    cp .env.example .env
+    generate security key , link storage file
+    php artisan key:generate 
+    after connect your database via .env file
+    php artisan migrate:fresh
+    php artisan db:seed
  
