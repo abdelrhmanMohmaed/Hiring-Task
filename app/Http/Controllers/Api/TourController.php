@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\TourRequest;
 use App\Http\Resources\TourResource;
-use App\Models\Travel; 
+use App\Models\Travel;
 
 class TourController extends Controller
 {
@@ -37,4 +37,5 @@ class TourController extends Controller
 
         return TourResource::collection($tours);
     }
+
 }
